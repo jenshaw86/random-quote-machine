@@ -1,11 +1,11 @@
 import React from 'react';
 import {shallow} from 'enzyme';
 
-import QuoteBox from './quoteBox';
-import Text from './text';
-import Author from './author';
-import TweetButton from './tweetButton';
-import NewQuoteButton from './newQuoteButton';
+import QuoteBox from '../components/quoteBox';
+import Text from '../components/text';
+import Author from '../components/author';
+import TweetButton from '../components/tweetButton';
+import NewQuoteButton from '../components/newQuoteButton';
 
 describe ('<QuoteBox />', () => {
   const wrapper = shallow(<QuoteBox />);

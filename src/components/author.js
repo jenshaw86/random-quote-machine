@@ -1,7 +1,7 @@
 import React from 'react'
 
 const Author = () => (
-  <div>
+  <div id='author'>
     This is the author component.
   </div>
 )

@@ -1,7 +1,7 @@
 import React from 'react'
 
 const NewQuoteButton = () => (
-  <button>
+  <button id="new-quote">
     NewQuote
   </button>
 )

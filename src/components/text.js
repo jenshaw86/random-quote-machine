@@ -1,7 +1,7 @@
 import React from 'react'
 
 const Text = () => (
-  <div>
+  <div id="text">
     This is the Text component.
   </div>
 )
