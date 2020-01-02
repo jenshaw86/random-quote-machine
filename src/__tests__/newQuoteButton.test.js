@@ -5,7 +5,7 @@ import NewQuoteButton from '../components/newQuoteButton';
 describe ('<NewQuoteButton />', () => {
   const wrapper = shallow(<NewQuoteButton />);
   
-  it ('has the id "new-quote"', () => {
+  it ('contains an id, "new-quote"', () => {
     expect(wrapper.is('#new-quote')).toBe(true)
   })
 })

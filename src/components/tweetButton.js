@@ -2,7 +2,7 @@ import React from 'react'
 
 const TweetButton = () => (
   <button id="tweet-quote">
-    Tweet
+    Tweet This Quote
   </button>
 )
 

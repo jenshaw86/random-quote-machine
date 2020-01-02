@@ -6,7 +6,8 @@ import Author from '../components/author'
 describe ('<Author />', () => {
   const wrapper = shallow(<Author />);
   
-  it ('has the id "author"', () => {
+  it ('contains an id, "author"', () => {
     expect(wrapper.is('#author')).toBe(true)
   })
+
 })

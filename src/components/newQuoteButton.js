@@ -2,7 +2,7 @@ import React from 'react'
 
 const NewQuoteButton = () => (
   <button id="new-quote">
-    NewQuote
+    Generate New Quote
   </button>
 )
 

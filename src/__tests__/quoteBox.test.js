@@ -14,19 +14,10 @@ describe ('<QuoteBox />', () => {
     expect(wrapper.is('#quote-box')).toBe(true)
   })
 
-  it ('contains text component', () => {
+  it ('contains Text, Author, TweetButton, and NewQuote components', () => {
     expect(wrapper.find(Text).exists()).toBe(true)
-  })
-
-  it ('contains author component', () => {
     expect(wrapper.find(Author).exists()).toBe(true)
-  })
-
-  it ('contains tweet component', () => {
     expect(wrapper.find(TweetButton).exists()).toBe(true)
-  })
-
-  it('contains new quote component', () => {
     expect(wrapper.find(NewQuoteButton).exists()).toBe(true)
   })
 })

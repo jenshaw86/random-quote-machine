@@ -4,8 +4,8 @@ import Text from '../components/text'
 
 describe ('<Text />', () => {
   const wrapper = shallow(<Text />);
-  
-  it ('has the id "text"', () => {
+
+  it ('contains an id, "text"', () => {
     expect(wrapper.is('#text')).toBe(true)
   })
 })
