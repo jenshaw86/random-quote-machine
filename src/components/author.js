@@ -1,8 +1,8 @@
 import React from 'react'
 
-const Author = () => (
+const Author = props => (
   <div id='author'>
-    - Author's name
+    - {props.author}
   </div>
 )
 

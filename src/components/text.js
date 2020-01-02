@@ -1,8 +1,8 @@
 import React from 'react'
 
-const Text = () => (
+const Text = props => (
   <div id="text">
-    "This is the random quote"
+    {`"${props.quote}"`}
   </div>
 )
 

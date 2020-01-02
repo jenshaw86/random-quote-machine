@@ -4,29 +4,26 @@ import Author from './author'
 import TweetButton from './tweetButton';
 import NewQuoteButton from './newQuoteButton';
 
-import {getQuote} from '../utils/api'
+// import {getQuote} from '../utils/api'
 
 const QuoteBox = () => {
   const [quote, setQuote] = useState('');
   const [author, setAuthor] = useState('');
 
-  const quoteAPI = `https://api.forismatic.com/api/1.0/?method=getQuote&format=jsonp&lang=en&jsonp=?`
-  
   useEffect(() => {
-    fetch(`${quoteAPI}`)
+    fetch(`https://quote-garden.herokuapp.com/quotes/random`)
     .then(res => res.json())
     .then(data => {
-      console.log(data)
+      setQuote(data.quoteText)
+      setAuthor(data.quoteAuthor)
     })
-    .catch(err => {
-      console.log(err)
-    })
-  })
+    .catch(err => console.log(err.message))
+  }, [])
 
   return(
     <div id="quote-box">
-      <Text />
-      <Author />
+      <Text quote={quote}/>
+      <Author author={author}/>
       <TweetButton />
       <NewQuoteButton />
     </div>
